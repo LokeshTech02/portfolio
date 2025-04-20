@@ -1,61 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lokesh Talagatla - Cybersecurity Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lokesh Talagatla | Cybersecurity Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    section {
+      padding: 2rem 10%;
+    }
+
+    h2 {
+      color: #ffdd57;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.7);
+      font-size: 0.9rem;
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 4px;
+    }
+
+    button {
+      background: #ffdd57;
+      color: #000;
+      border: none;
+      padding: 0.8rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #ffc107;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 1.5rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <h1>Lokesh Talagatla</h1>
-    <p>Cybersecurity Enthusiast | Full Stack Developer | Student at SLU</p>
+    <p>Cybersecurity Graduate Student | Ethical Hacking | Threat Detection | Full Stack Developer</p>
+    <p>📍 Saint Louis, MO | 📧 lokesh.talagatla@slu.edu | 📞 +1-(314)-728-4171</p>
+    <p><a href="https://www.linkedin.com/in/lokesh-talagatla-5a9271235" style="color: #ffdd57">LinkedIn</a></p>
   </header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>I am currently pursuing a Master of Science in Cybersecurity at Saint Louis University with a GPA of 4.00. I’m passionate about securing systems, building ethical hacking tools, and solving cybersecurity challenges.</p>
-  </section>
+  <section>
+    <h2>Education</h2>
+    <div class="card">
+      <p><strong>Master of Science in Cybersecurity</strong><br>Saint Louis University, Jan 2024 - Dec 2025 | GPA: 4.00</p>
+      <p><strong>Bachelor of Technology in CSE</strong><br>Priyadarshini College of Engineering and Technology, Jul 2019 - May 2023 | CGPA: 7.80</p>
+    </div>
 
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Password Cracker in Rust</h3>
-      <p>Built a tool to test password strength and explored cryptographic weaknesses in hashing algorithms.</p>
-    </div>
-    <div class="project">
-      <h3>CrowdStrike Proving Ground Lab</h3>
-      <p>Worked with CrowdStrike Falcon to detect and prevent threats, integrated with AD, and analyzed alerts using Process Tree and Timeline.</p>
-    </div>
-    <div class="project">
-      <h3>Virtualized Network Environment</h3>
-      <p>Created a corporate network in VirtualBox with Kali Linux, Ubuntu, and Metasploitable to simulate vulnerabilities and secure them.</p>
-    </div>
-    <div class="project">
-      <h3>CryptDB - Final Year Project</h3>
-      <p>Led a team to build a secure SQL database that allows queries over encrypted data.</p>
-    </div>
-  </section>
-
-  <section class="experience">
     <h2>Experience</h2>
-    <p><strong>Cephas Consultancy Services Pvt Ltd</strong> - Software Intern (Sep 2022 – Nov 2023)<br>Automated LinkedIn job postings using XML and collaborated with LinkedIn's API team.</p>
-    <p><strong>APSCHE - EduSkills</strong> - Cybersecurity Intern (Sep 2022 – Nov 2022)<br>Hands-on experience with Wireshark, Splunk, Nessus; worked on threat analysis and SIEM tools.</p>
-    <p><strong>Employment Express</strong> - Full Stack Intern (Oct 2022 – Nov 2022)<br>Built APIs and backend using Flask/Django; integrated SQL and NoSQL databases.</p>
-    <p><strong>GlobalShala</strong> - Defensive Hacking Intern (Mar 2022)<br>Created VM for hacking tools, scanned networks with Nmap and hardened OS security.</p>
-  </section>
+    <div class="card">
+      <p><strong>Cephas Consultancy Services</strong> (Sep 2022 – Nov 2023)</p>
+      <ul>
+        <li>Automated LinkedIn job posts with XML scripts.</li>
+        <li>Integrated company site data with LinkedIn platform.</li>
+      </ul>
+      <p><strong>Palo Alto Networks Virtual Internship</strong> (Sep 2022 – Nov 2022)</p>
+      <ul>
+        <li>Used Wireshark, Splunk, Nessus for network threat detection.</li>
+        <li>Performed team-based vulnerability assessments and attack simulations.</li>
+      </ul>
+      <p><strong>Employment Express (Microsoft)</strong> (Oct 2022 – Nov 2022)</p>
+      <ul>
+        <li>Developed APIs with Flask/Django.</li>
+        <li>Integrated SQL/NoSQL for scalable data handling.</li>
+      </ul>
+      <p><strong>GlobalShala Internship</strong> (Mar 2022)</p>
+      <ul>
+        <li>Created custom VM for ethical hacking training.</li>
+        <li>Performed vulnerability scans and OS hardening.</li>
+      </ul>
+    </div>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: lokesh.talagatla@slu.edu</p>
-    <p>Phone: +1-(314)-728-4171</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/lokesh-talagatla-5a9271235" target="_blank">lokesh-talagatla</a></p>
+    <h2>Projects</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Password Cracker in Rust</strong> – Ethical password testing & hash analysis.</li>
+        <li><strong>CrowdStrike Proving Ground</strong> – Real-time threat detection & AD integration.</li>
+        <li><strong>Network Security Environment</strong> – VirtualBox network simulation with DVWA/Kali Linux.</li>
+        <li><strong>Red vs Blue Team Simulation</strong> – DoS attack defense, SIEM log analysis.</li>
+        <li><strong>CryptDB</strong> – Secure SQL queries on encrypted data.</li>
+      </ul>
+    </div>
+
+    <h2>Certifications & Skills</h2>
+    <div class="card">
+      <p><strong>Certifications:</strong></p>
+      <ul>
+        <li>ISC2 Certified in Cybersecurity</li>
+        <li>Mastercard Cybersecurity (Forage)</li>
+        <li>Palo Alto: Network & Cloud Security, SOC Fundamentals</li>
+        <li>Cisco Networking Academy: Intro to Cybersecurity</li>
+      </ul>
+      <p><strong>Skills:</strong></p>
+      <ul>
+        <li>Penetration Testing: Nmap, Kali, DVWA, Metasploit</li>
+        <li>Detection & Response: CrowdStrike, Splunk, SIEM</li>
+        <li>Languages: Python, Rust, XML, SQL, Java, HTML/CSS</li>
+        <li>Soft Skills: Problem Solving, Teamwork, Communication</li>
+      </ul>
+    </div>
+
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Lokesh Talagatla</p>
+    &copy; 2025 Lokesh Talagatla | Portfolio
   </footer>
 
-  <script src="script.js"></script>
+  <!-- EmailJS Integration -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("W7Lf-D0ffs7rcATnm"); // Initialize with your public key
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Send form data using EmailJS
+      emailjs.sendForm('service_l7b23jl', 'template_2s7yke9', this)
+        .then(function() {
+          alert('Message sent successfully!');
+        }, function(error) {
+          alert('FAILED to send message: ' + JSON.stringify(error));
+        });
+    });
+  </script>
 </body>
+
 </html>
